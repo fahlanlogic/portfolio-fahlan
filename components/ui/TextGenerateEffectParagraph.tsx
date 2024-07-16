@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export const TextGenerateEffect = ({
+export const TextGenerateEffectParagraph = ({
   words,
   className,
 }: {
@@ -33,7 +33,9 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               className={`${
-                idx > 3 ? "text-yellow-400" : "dark:text-white text-black"
+                word === "Fahlan,"
+                  ? "text-yellow-400 font-bold"
+                  : "dark:text-white text-black"
               } opacity-0`}>
               {word}{" "}
             </motion.span>
@@ -44,7 +46,7 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div className={cn("font-bold", className)}>
+    <div className={cn("", className)}>
       <div className="mt-4">
         <div className=" dark:text-white text-black leading-snug">
           {renderWords()}
