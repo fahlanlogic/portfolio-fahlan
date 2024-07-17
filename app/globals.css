@@ -6,6 +6,6 @@
   --font-jetbrains-mono: 'JetBrains Mono', monospace;
 }
 
-.magic-button {
+.magic-button, .floating-nav {
   border-radius: 10px !important;
 }
