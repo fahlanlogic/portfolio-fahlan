@@ -21,7 +21,7 @@ const Hero = () => {
             words="Dynamic Web Magic with Next.js"
           /> */}
           <TextGenerateEffect
-            className="text-center uppercase text-[40px] md:text-5xl lg:text-6xl tracking-wide"
+            className="text-center uppercase text-4xl md:text-5xl lg:text-6xl tracking-wide"
             words="Transforming Concepts into Seamless User Experiences"
           />
           <TextGenerateEffectParagraph
